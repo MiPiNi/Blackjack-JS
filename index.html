@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
+		<script src="script.js" defer></script>
+		<title>Blackjack</title>
+	</head>
+	<body>
+		<header>
+			<img src="imgs/logo.png" alt="cards logo" />
+			<h1>Play Blackjack!</h1>
+		</header>
+		<main>
+			<section class="dealer">
+				<h2>
+					<p id="dealerResult">Dealer</p>
+					<p id="dealerScore"></p>
+				</h2>
+				<div class="hand" id="dealerHand"></div>
+			</section>
+			<hr style="border: 2px black solid" />
+			<section class="player">
+				<h2>
+					<p id="playerResult">Player</p>
+					<p id="playerScore"></p>
+				</h2>
+				<div class="hand" id="playerHand"></div>
+			</section>
+			<div class="controlls">
+				<button id="btn" onclick="hit()">Hit</button>
+				<button id="btn" onclick="stand()">Stand</button>
+				<button onclick="start()">Play Again</button>
+			</div>
+		</main>
+		<footer>
+			<p>Author: Daniel "MiPiNi" Grala</p>
+			<br />
+			<p>
+				Credits: <br /><a
+					href="https://www.freepik.com/vectors/casino-chip"
+					>Casino chip vector created by macrovector -
+					www.freepik.com</a
+				>
+				<br />
+				<a
+					href="https://www.flaticon.com/free-icons/casino"
+					title="casino icons"
+					>Casino icons created by bearicons - Flaticon</a
+				>
+			</p>
+		</footer>
+	</body>
+</html>
