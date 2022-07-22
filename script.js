@@ -108,7 +108,6 @@ function checkWin(standed = false) {
 		buttons.forEach((element) => {
 			element.disabled = true;
 		});
-		alert("It's a draw!");
 		playerResultElement.innerText = "Player ⚫";
 		dealerResultElement.innerText = "Dealer ⚫";
 		return true;
@@ -122,7 +121,6 @@ function checkWin(standed = false) {
 		buttons.forEach((element) => {
 			element.disabled = true;
 		});
-		alert("Dealer wins!");
 		playerResultElement.innerText = "Player ❌";
 		dealerResultElement.innerText = "Dealer 🏆";
 		return true;
@@ -130,7 +128,6 @@ function checkWin(standed = false) {
 		buttons.forEach((element) => {
 			element.disabled = true;
 		});
-		alert("Player wins!");
 		playerResultElement.innerText = "Player 🏆";
 		dealerResultElement.innerText = "Dealer ❌";
 		return true;
