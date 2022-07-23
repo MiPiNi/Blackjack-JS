@@ -91,15 +91,20 @@ function createCard() {
 
 function checkScore(hand) {
 	score = 0;
+	hasAce = false;
 	hand.forEach((element) => {
 		if (element.value == "Ace") {
-			score = score + 11 > 21 ? score + 1 : score + 11;
+			score = hasAce ? score + 1 : score + 11;
+			hasAce = true;
 		} else if (isNaN(element.value)) {
 			score += 10;
 		} else {
 			score += element.value;
 		}
 	});
+	if (score > 21 && hasAce) {
+		score -= 10;
+	}
 	return score;
 }
 
